@@ -610,17 +610,17 @@ nav {
 .service-card ul li {
     margin-bottom: 10px;
     position: relative;
-    padding-left: 25px; /* enough space for the ✓ */
+    padding-left: 25px;
     line-height: 1.5;
     display: flex;
-    align-items: flex-start; /* aligns text with the icon */
+    align-items: flex-start;
 }
 
 .service-card ul li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    top: 0.1em; /* fine-tune vertically */
+    top: 0.1em;
     color: var(--primary-green);
     font-weight: bold;
     width: 20px;
@@ -805,7 +805,7 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Gallery Content */
+/* Gallery Content - UPDATED FOR 2 COLUMNS ON DESKTOP */
 .gallery-content {
     background-color: var(--white);
 }
@@ -833,11 +833,18 @@ nav {
     color: var(--white);
 }
 
-.gallery-item {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 220px; /* 🔽 smaller height */
+/* Gallery Grid Container */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 column */
+    gap: 30px;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .gallery-item {
@@ -885,7 +892,7 @@ nav {
     margin-bottom: 10px;
 } 
 
-    /* Results Section */
+/* Results Section */
 .results {
     background-color: var(--light-gray);
 }
@@ -1541,6 +1548,11 @@ footer {
     .contact-info {
         padding-right: 0;
     }
+    
+    /* Mobile gallery adjustments */
+    .gallery-item {
+        height: 250px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1572,5 +1584,22 @@ footer {
     
     .case-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Mobile gallery adjustments */
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .gallery-overlay {
+        padding: 10px;
+    }
+    
+    .gallery-overlay h3 {
+        font-size: 1.1rem;
+    }
+    
+    .gallery-overlay p {
+        font-size: 0.9rem;
     }
 }
