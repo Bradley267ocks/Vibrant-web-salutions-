@@ -604,6 +604,7 @@ nav {
 .service-card ul {
     margin: 20px 0;
     padding-left: 20px;
+    list-style: none;
 }
 
 .service-card ul li {
