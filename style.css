@@ -837,7 +837,7 @@ nav {
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobile: 1 column */
-    gap: 90px;
+    gap: 100px;
 }
 
 /* Desktop: 2 columns */
@@ -856,7 +856,7 @@ nav {
 
 .gallery-item img {
     width: 100%;
-    height: 110%;
+    height: 120%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
