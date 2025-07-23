@@ -837,7 +837,7 @@ nav {
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobile: 1 column */
-    gap: 100px;
+    gap: 150px;
 }
 
 /* Desktop: 2 columns */
@@ -856,7 +856,7 @@ nav {
 
 .gallery-item img {
     width: 100%;
-    height: 120%;
+    height: 140%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -878,7 +878,7 @@ nav {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    padding: 20px;
+    padding: 36px;
     text-align: center;
     color: var(--white);
 }
