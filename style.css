@@ -824,7 +824,6 @@ nav {
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
-
 /* Gallery Content - UPDATED FOR 2 COLUMNS ON DESKTOP */
 .gallery-content {
     background-color: var(--white);
@@ -848,7 +847,8 @@ nav {
     transition: all 0.3s ease;
 }
 
-.filter-btn.active, .filter-btn:hover {
+.filter-btn.active, 
+.filter-btn:hover {
     background-color: var(--primary-green);
     color: var(--white);
 }
@@ -857,7 +857,7 @@ nav {
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobile: 1 column */
-    gap: 150px;
+    gap: 20px;
 }
 
 /* Desktop: 2 columns */
@@ -871,12 +871,12 @@ nav {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 300px;
+    aspect-ratio: 1 / 1; /* Makes it perfectly square */
 }
 
 .gallery-item img {
     width: 100%;
-    height: 140%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -885,13 +885,17 @@ nav {
     transform: scale(1.1);
 }
 
+/* Overlay with gradient shadow */
 .gallery-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 204, 113, 0.8);
+    background: linear-gradient(
+        rgba(46, 204, 113, 0.8), 
+        rgba(46, 204, 113, 0.5)
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -905,12 +909,14 @@ nav {
 
 .gallery-item:hover .gallery-overlay {
     opacity: 1;
+    box-shadow: 0 10px 20px rgba(46, 204, 113, 0.6); /* Shadow matches overlay color */
 }
 
 .gallery-overlay h3 {
     color: var(--white);
     margin-bottom: 10px;
-} 
+}
+
 
 /* Results Section */
 .results {
