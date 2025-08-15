@@ -114,7 +114,7 @@ p { font-size: 1.1rem; margin-bottom: 15px; }
   padding: 20px 0;
 }
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--primary-green);
   text-decoration: none;
@@ -566,3 +566,4 @@ p { font-size: 1.1rem; margin-bottom: 15px; }
   .hero { height: auto; padding: 120px 0 80px; }
   .hero-content h1 { font-size: 2rem; }
 }
+
