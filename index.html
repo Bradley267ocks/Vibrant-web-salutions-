@@ -323,44 +323,89 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" id="testimonials" role="region" aria-label="Client Testimonials">
-      <div class="container">
-        <h2>What Clients Say</h2>
+<section class="testimonials" id="testimonials" role="region" aria-label="Client Testimonials">
+  <div class="container">
+    <h2>What Clients Say</h2>
 
-        <div class="testimonial-slider">
-          <div class="testimonial-slide active" itemscope itemtype="https://schema.org/Review">
-            <p itemprop="reviewBody">
-              "Vibrant Web Solutions transformed our online presence completely.
-              The new site looks amazing and increased conversions."
-            </p>
-            <div class="testimonial-author" itemprop="author">Robert Johnson</div>
-            <div class="testimonial-position" itemprop="author">CEO, Tech Innovations Inc.</div>
-          </div>
+    <div class="testimonial-slider">
 
-          <div class="testimonial-slide" itemscope itemtype="https://schema.org/Review">
-            <p itemprop="reviewBody">
-              "A game-changer for our brand. Great attention to detail and fast delivery."
-            </p>
-            <div class="testimonial-author" itemprop="author">Maria Garcia</div>
-            <div class="testimonial-position" itemprop="author">Marketing Director, Style Boutique</div>
-          </div>
+      <!-- Testimonial 1 -->
+      <div class="testimonial-slide active" itemscope itemtype="https://schema.org/Review">
+        <!-- Business being reviewed -->
+        <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+          <meta itemprop="name" content="Vibrant Web Solutions"/>
+        </span>
 
-          <div class="testimonial-slide" itemscope itemtype="https://schema.org/Review">
-            <p itemprop="reviewBody">
-              "The AI integration reduced customer response times by 70% — outstanding work."
-            </p>
-            <div class="testimonial-author" itemprop="author">David Kim</div>
-            <div class="testimonial-position" itemprop="author">CTO, Global Solutions</div>
-          </div>
+        <p itemprop="reviewBody">
+          "Vibrant Web Solutions transformed our online presence completely.
+          The new site looks amazing and increased conversions."
+        </p>
+
+        <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Robert Johnson"/>
+        </div>
+        <div class="testimonial-position">CEO, Tech Innovations Inc.</div>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5"/>
+          <meta itemprop="bestRating" content="5"/>
+          <meta itemprop="worstRating" content="1"/>
         </div>
 
-        <div class="slider-nav">
-          <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
-          <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
-          <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
-        </div>
+        <meta itemprop="datePublished" content="2025-01-01"/>
       </div>
-    </section>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-slide" itemscope itemtype="https://schema.org/Review">
+        <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+          <meta itemprop="name" content="Vibrant Web Solutions"/>
+        </span>
+
+        <p itemprop="reviewBody">
+          "A game-changer for our brand. Great attention to detail and fast delivery."
+        </p>
+
+        <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Maria Garcia"/>
+        </div>
+        <div class="testimonial-position">Marketing Director, Style Boutique</div>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5"/>
+          <meta itemprop="bestRating" content="5"/>
+          <meta itemprop="worstRating" content="1"/>
+        </div>
+
+        <meta itemprop="datePublished" content="2025-02-01"/>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-slide" itemscope itemtype="https://schema.org/Review">
+        <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+          <meta itemprop="name" content="Vibrant Web Solutions"/>
+        </span>
+
+        <p itemprop="reviewBody">
+          "The AI integration reduced customer response times by 70% — outstanding work."
+        </p>
+
+        <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="David Kim"/>
+        </div>
+        <div class="testimonial-position">CTO, Global Solutions</div>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5"/>
+          <meta itemprop="bestRating" content="5"/>
+          <meta itemprop="worstRating" content="1"/>
+        </div>
+
+        <meta itemprop="datePublished" content="2025-03-01"/>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Gallery -->
     <section class="gallery" id="gallery" role="region" aria-label="Project Gallery">
@@ -603,6 +648,7 @@
 </body>
 
 </html>
+
 
 
 
