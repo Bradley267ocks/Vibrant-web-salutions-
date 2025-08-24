@@ -29,33 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   });
 });
-
-// ======== Testimonial Slider ========
-const testimonialSlides = document.querySelectorAll('.testimonial-slide');
-const sliderDots = document.querySelectorAll('.slider-dot');
-let currentSlide = 0;
-
-function showSlide(index) {
-  if (!testimonialSlides.length) return;
-  testimonialSlides.forEach(s => s.classList.remove('active'));
-  sliderDots.forEach(d => d.classList.remove('active'));
-  testimonialSlides[index].classList.add('active');
-  if (sliderDots[index]) sliderDots[index].classList.add('active');
-  currentSlide = index;
-}
-
-// Dot controls
-sliderDots.forEach((dot, idx) => {
-  dot.addEventListener('click', () => showSlide(idx));
-});
-
-// Auto-advance
-setInterval(() => {
-  if (!testimonialSlides.length) return;
-  currentSlide = (currentSlide + 1) % testimonialSlides.length;
-  showSlide(currentSlide);
-}, 5000);
-
 // ======== Reveal on Scroll ========
 const revealSelector = '.service-card, .mv-card, .gallery-item, .offer-card';
 const revealItems = document.querySelectorAll(revealSelector);
@@ -78,3 +51,4 @@ window.addEventListener('load', () => {
   revealOnScroll();
   showSlide(0);
 });
+
