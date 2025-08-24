@@ -268,50 +268,9 @@ p { font-size: 1.1rem; margin-bottom: 15px; }
   color: var(--primary-green);
   margin-bottom: 20px;
 }
-.mv-card h3 { color: var(--primary-green); }
-
-/* ===============================
-   Testimonials
-=================================*/
-.testimonials { background-color: var(--light-gray); }
-.testimonial-slider {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
+.mv-card h3 { color: var(--primary-green); 
+            
 }
-.testimonial-slide {
-  display: none;
-  padding: 30px;
-  background-color: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  text-align: center;
-}
-.testimonial-slide.active {
-  display: block;
-  animation: fadeIn 0.5s ease;
-}
-.testimonial-slide p { font-style: italic; margin-bottom: 20px; }
-.testimonial-author {
-  font-weight: 700;
-  color: var(--primary-green);
-}
-.testimonial-position { color: var(--gray); font-size: 0.9rem; }
-.slider-nav {
-  text-align: center;
-  margin-top: 30px;
-}
-.slider-dot {
-  display: inline-block;
-  width: 12px; height: 12px;
-  background-color: var(--gray);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.slider-dot.active { background-color: var(--primary-green); }
 
 /* ===============================
    Gallery
@@ -566,4 +525,5 @@ p { font-size: 1.1rem; margin-bottom: 15px; }
   .hero { height: auto; padding: 120px 0 80px; }
   .hero-content h1 { font-size: 2rem; }
 }
+
 
