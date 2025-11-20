@@ -1015,8 +1015,6 @@ p {
   .portfolio-gallery {
     grid-template-columns: 1fr; /* 1 image per row on mobile */
   }
-}
-
 .testimonials {
   background: linear-gradient(135deg, var(--dark-gray) 0%, var(--pure-black) 100%);
   color: var(--pure-white);
@@ -1331,6 +1329,7 @@ p {
   }
 
 }
+
 
 
 
