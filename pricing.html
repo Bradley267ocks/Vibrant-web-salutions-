@@ -52,108 +52,239 @@
     </section>
 
     <!-- Pricing Comparison -->
-    <section class="pricing-comparison">
-      <div class="container">
-        <div class="comparison-table">
-          <div class="table-header">
-            <div class="feature-column">Website Features</div>
-            <div class="plan-column">Starter</div>
-            <div class="plan-column featured">Business</div>
-            <div class="plan-column">Pro</div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Monthly Price</div>
-            <div class="plan-column">R300/month</div>
-            <div class="plan-column featured">R397/month</div>
-            <div class="plan-column">R597/month</div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Setup Fee</div>
-            <div class="plan-column">R1000 once-off</div>
-            <div class="plan-column featured">R2500 once-off</div>
-            <div class="plan-column">R4000 once-off</div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Number of Pages</div>
-            <div class="plan-column">1 page</div>
-            <div class="plan-column featured">5 pages</div>
-            <div class="plan-column">7+ pages</div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Mobile Responsive</div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">SEO Setup</div>
-            <div class="plan-column">Basic</div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column">Premium</div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Contact Form</div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">WhatsApp Integration</div>
-            <div class="plan-column"><i class="fas fa-times"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">AI Chatbot</div>
-            <div class="plan-column"><i class="fas fa-times"></i></div>
-            <div class="plan-column featured"><i class="fas fa-times"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Social Media Integration</div>
-            <div class="plan-column"><i class="fas fa-times"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Unlimited Changes</div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row">
-            <div class="feature-column">Ongoing Support</div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-            <div class="plan-column featured"><i class="fas fa-check"></i></div>
-            <div class="plan-column"><i class="fas fa-check"></i></div>
-          </div>
-          
-          <div class="table-row action-row">
-            <div class="feature-column"></div>
-            <div class="plan-column">
-              <a href="contact.html" class="btn">Get Started</a>
-            </div>
-            <div class="plan-column featured">
-              <a href="contact.html" class="btn">Get Started</a>
-            </div>
-            <div class="plan-column">
-              <a href="contact.html" class="btn">Get Started</a>
-            </div>
-          </div>
+<section class="pricing-comparison">
+  <div class="container">
+    <!-- Desktop Table (shown on larger screens) -->
+    <div class="comparison-table">
+      <div class="table-header">
+        <div class="feature-column">Website Features</div>
+        <div class="plan-column" data-plan="Starter">Starter</div>
+        <div class="plan-column featured" data-plan="Business">Business</div>
+        <div class="plan-column" data-plan="Pro">Pro</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Monthly Price</div>
+        <div class="plan-column" data-plan="Starter">R300/month</div>
+        <div class="plan-column featured" data-plan="Business">R397/month</div>
+        <div class="plan-column" data-plan="Pro">R597/month</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Setup Fee</div>
+        <div class="plan-column" data-plan="Starter">R1000 once-off</div>
+        <div class="plan-column featured" data-plan="Business">R2500 once-off</div>
+        <div class="plan-column" data-plan="Pro">R4000 once-off</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Number of Pages</div>
+        <div class="plan-column" data-plan="Starter">1 page</div>
+        <div class="plan-column featured" data-plan="Business">5 pages</div>
+        <div class="plan-column" data-plan="Pro">7+ pages</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Mobile Responsive</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-check"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">SEO Setup</div>
+        <div class="plan-column" data-plan="Starter">Basic</div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro">Premium</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Contact Form</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-check"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">WhatsApp Integration</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-times"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">AI Chatbot</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-times"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-times"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Social Media Integration</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-times"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Unlimited Changes</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-check"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row">
+        <div class="feature-column">Ongoing Support</div>
+        <div class="plan-column" data-plan="Starter"><i class="fas fa-check"></i></div>
+        <div class="plan-column featured" data-plan="Business"><i class="fas fa-check"></i></div>
+        <div class="plan-column" data-plan="Pro"><i class="fas fa-check"></i></div>
+      </div>
+      
+      <div class="table-row action-row">
+        <div class="feature-column"></div>
+        <div class="plan-column" data-plan="Starter">
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
+        <div class="plan-column featured" data-plan="Business">
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
+        <div class="plan-column" data-plan="Pro">
+          <a href="contact.html" class="btn">Get Started</a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Mobile Cards (shown on small screens) -->
+    <div class="mobile-pricing-cards">
+      <!-- Starter Plan Card -->
+      <div class="mobile-plan-card">
+        <div class="mobile-plan-header">
+          <h3>Starter Website</h3>
+          <div class="mobile-price">R300/month</div>
+          <div class="mobile-setup-fee">+ R1000 once-off setup</div>
+        </div>
+        <div class="mobile-features">
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Pages</span>
+            <span class="mobile-feature-value">1 page</span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Mobile Responsive</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">SEO Setup</span>
+            <span class="mobile-feature-value">Basic</span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Contact Form</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">WhatsApp Integration</span>
+            <span class="mobile-feature-value"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">AI Chatbot</span>
+            <span class="mobile-feature-value"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Social Media</span>
+            <span class="mobile-feature-value"><i class="fas fa-times"></i></span>
+          </div>
+        </div>
+        <div class="mobile-action">
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Business Plan Card -->
+      <div class="mobile-plan-card featured">
+        <div class="mobile-plan-header">
+          <h3>Business Website</h3>
+          <div class="mobile-price">R397/month</div>
+          <div class="mobile-setup-fee">+ R2500 once-off setup</div>
+          <span class="featured-badge">MOST POPULAR</span>
+        </div>
+        <div class="mobile-features">
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Pages</span>
+            <span class="mobile-feature-value">5 pages</span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Mobile Responsive</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">SEO Setup</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Contact Form</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">WhatsApp Integration</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">AI Chatbot</span>
+            <span class="mobile-feature-value"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Social Media</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+        </div>
+        <div class="mobile-action">
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Pro Plan Card -->
+      <div class="mobile-plan-card">
+        <div class="mobile-plan-header">
+          <h3>Pro Website</h3>
+          <div class="mobile-price">R597/month</div>
+          <div class="mobile-setup-fee">+ R4000 once-off setup</div>
+        </div>
+        <div class="mobile-features">
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Pages</span>
+            <span class="mobile-feature-value">7+ pages</span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Mobile Responsive</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">SEO Setup</span>
+            <span class="mobile-feature-value">Premium</span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Contact Form</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">WhatsApp Integration</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">AI Chatbot</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+          <div class="mobile-feature">
+            <span class="mobile-feature-name">Social Media</span>
+            <span class="mobile-feature-value"><i class="fas fa-check"></i></span>
+          </div>
+        </div>
+        <div class="mobile-action">
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Detailed Packages -->
     <section class="detailed-packages">
@@ -362,3 +493,4 @@
 </body>
 
 </html>
+
