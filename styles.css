@@ -1298,3 +1298,45 @@ p {
   }
 
 }
+/* Mobile Responsive Fix for Pricing Table */
+@media (max-width: 768px) {
+  .table-header {
+    display: none; /* Hide header on mobile */
+  }
+
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-gray);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .feature-column {
+    background-color: var(--off-white);
+    font-weight: 700;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 20px;
+  }
+
+  .plan-column {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    gap: 10px;
+  }
+
+  .plan-column:last-child {
+    border-bottom: none;
+  }
+
+  .plan-column.featured {
+    background-color: var(--light-gold);
+  }
+}
+
+
