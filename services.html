@@ -253,6 +253,22 @@
   </div>
 
   <script src="script.js" async></script>
+  <!-- Meta Pixel Button Click Tracking -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.cta-buttons .btn-primary').forEach(btn => {
+      btn.addEventListener('click', function() {
+        fbq('track', 'Lead', {content_name: 'View Pricing Button'});
+      });
+    });
+    document.querySelectorAll('.cta-buttons .btn-secondary').forEach(btn => {
+      btn.addEventListener('click', function() {
+        fbq('track', 'Lead', {content_name: 'Get Free Quote Button'});
+      });
+    });
+  });
+  </script>
 </body>
 
 </html>
+
