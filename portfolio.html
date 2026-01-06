@@ -7,6 +7,25 @@
   <meta name="keywords" content="website portfolio, web design examples, South Africa websites, business websites">
   <meta name="author" content="Vibrant Web Solutions">
   <title>Portfolio - Vibrant Web Solutions | Our Website Projects</title>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1297315855518283'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1297315855518283&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="icon" href="Untitled_design__1_-removebg-preview (1).png">
@@ -276,10 +295,29 @@
     </a>
   </div>
 
-  <script src="script.js" async></script>
+  <script src="script.js" async></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Track "View Pricing" clicks
+  document.querySelectorAll('.cta-buttons .btn-primary').forEach(btn => {
+    btn.addEventListener('click', function() {
+      fbq('track', 'Lead', {content_name: 'View Pricing Button'});
+    });
+  });
+
+  // Track "Get Free Quote" clicks
+  document.querySelectorAll('.cta-buttons .btn-secondary').forEach(btn => {
+    btn.addEventListener('click', function() {
+      fbq('track', 'Lead', {content_name: 'Get Free Quote Button'});
+    });
+  });
+});
+</script>
+
+  
 </body>
 
 </html>
+
 
 
 
